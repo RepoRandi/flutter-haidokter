@@ -1,4 +1,4 @@
-package com.example.hyper_ui
+package com.randev.haidokter
 
 import io.flutter.embedding.android.FlutterActivity
 
