@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/core.dart';
+import 'package:haidokter/core.dart';
 
 Widget QDismissible({
   required Function onDismiss,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/core.dart';
+import 'package:haidokter/core.dart';
 
 class QActionButtonWithOptions extends StatelessWidget {
   final String label;

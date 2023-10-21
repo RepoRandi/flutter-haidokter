@@ -1,4 +1,4 @@
-import 'package:hyper_ui/core.dart';
+import 'package:haidokter/core.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -20,12 +20,7 @@ class MainApp extends StatelessWidget {
       navigatorKey: Get.navigatorKey,
       debugShowCheckedModeBanner: false,
       theme: getDefaultTheme(),
-      home: MainNavigationView(),
-      builder: (context, child) => DebugView(
-        context: context,
-        child: child,
-        visible: true,
-      ),
+      home: LoginView(),
     );
   }
 }

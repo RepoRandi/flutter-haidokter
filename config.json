@@ -1,5 +1,14 @@
 {
-    "modules": [],
+    "modules": [
+        "auth/login",
+        "patient/patient_main_navigation",
+        "patient/patient_dashboard",
+        "patient/patient_doctor_detail",
+        "patient/patient_profile",
+        "doctor/doctor_main_navigation",
+        "doctor/doctor_dashboard",
+        "doctor/doctor_profile"
+    ],
     "module_directory_name": "module",
     "experimental_mode": false,
     "learning_mode": false,
