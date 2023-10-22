@@ -11,3 +11,6 @@ var successColor = Color(0xff2eb85c);
 var infoColor = Color(0xff3399ff);
 var warningColor = Color(0xfff9b115);
 var dangerColor = Color(0xffe55353);
+
+var blueColor = Color(0xff006dfa);
+var darkBlueColor = Color(0xff003e88);
