@@ -5,7 +5,9 @@ import '../event/patient_doctor_detail_event.dart';
 import '../state/patient_doctor_detail_state.dart';
 
 class PatientDoctorDetailView extends StatefulWidget {
-  const PatientDoctorDetailView({Key? key}) : super(key: key);
+  final Map doctor;
+  const PatientDoctorDetailView({Key? key, required this.doctor})
+      : super(key: key);
 
   @override
   State<PatientDoctorDetailView> createState() =>

@@ -318,7 +318,9 @@ class _PatientDoctorListViewState extends State<PatientDoctorListView> {
                             ),
                             child: const Text('Buat Janji'),
                             onPressed: () {
-                              Get.to(PatientDoctorDetailView());
+                              Get.to(PatientDoctorDetailView(
+                                doctor: doctor,
+                              ));
                             },
                           ),
                         ],
