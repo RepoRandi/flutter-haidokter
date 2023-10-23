@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../bloc/patient_doctor_detail_bloc.dart';
-import '../event/patient_doctor_detail_event.dart';
 import '../state/patient_doctor_detail_state.dart';
 
 class PatientDoctorDetailView extends StatefulWidget {
