@@ -16,3 +16,5 @@ var blueColor = Color(0xff006dfa);
 var lightColor = Color(0xff6c96de);
 var darkBlueColor = Color(0xff003e88);
 var pinkColor = Color(0xffee5693);
+var greyColor = Color(0xff7f7f7f);
+var orangeColor = Color(0xfffa6d01);
