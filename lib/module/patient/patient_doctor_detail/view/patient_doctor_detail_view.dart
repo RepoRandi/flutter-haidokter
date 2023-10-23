@@ -52,24 +52,26 @@ class _PatientDoctorDetailViewState extends State<PatientDoctorDetailView> {
   ) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('PatientDoctorDetail'),
+        elevation: 0.0,
+        centerTitle: false,
+        title: const Text(
+          'Profile Dokter',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        actions: [
+          const Icon(
+            Icons.share,
+            size: 24.0,
+          ),
+          const SizedBox(
+            width: 16.0,
+          ),
+        ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Text(
-            'Counter: ${state.counter}',
-            style: const TextStyle(fontSize: 24),
-          ),
-          IconButton(
-            onPressed: () => bloc.add(PatientDoctorDetailIncrementEvent()),
-            icon: const Icon(
-              Icons.add,
-              size: 24.0,
-            ),
-          ),
-        ],
+        children: [],
       ),
     );
   }
