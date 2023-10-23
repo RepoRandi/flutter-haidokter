@@ -83,13 +83,13 @@ class _PatientMainNavigationViewState extends State<PatientMainNavigationView> {
               icon: Icon(
                 MdiIcons.listBox,
               ),
-              label: "Order",
+              label: 'Transaksi',
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,
               ),
-              label: "Profile",
+              label: 'Profile',
             ),
           ],
         ),
