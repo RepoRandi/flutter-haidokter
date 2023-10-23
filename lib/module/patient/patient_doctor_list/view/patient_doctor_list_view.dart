@@ -317,7 +317,9 @@ class _PatientDoctorListViewState extends State<PatientDoctorListView> {
                               backgroundColor: orangeColor,
                             ),
                             child: const Text('Buat Janji'),
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.to(PatientDoctorDetailView());
+                            },
                           ),
                         ],
                       ),
