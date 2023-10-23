@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 var primaryColor = Color(0xff321fdb);
 var secondaryColor = Color(0xffef9920);
-var disabledColor = Color(0xffcdcdcd);
+var disabledColor = Color(0xfff3f3f3);
 var textColor = Colors.white70;
 var secondaryTextColor = Color(0xff868686);
 var scaffoldBackgroundColor = Color(0xFFFFFF);
@@ -15,3 +15,4 @@ var dangerColor = Color(0xffc71610);
 var blueColor = Color(0xff006dfa);
 var lightColor = Color(0xff6c96de);
 var darkBlueColor = Color(0xff003e88);
+var pinkColor = Color(0xffee5693);
