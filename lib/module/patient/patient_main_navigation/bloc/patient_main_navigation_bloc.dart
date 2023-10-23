@@ -11,8 +11,8 @@ class PatientMainNavigationBloc
     extends Bloc<PatientMainNavigationEvent, PatientMainNavigationState>
     with _BlocLifecycle {
   PatientMainNavigationBloc() : super(PatientMainNavigationState()) {
-    on<PatientMainNavigationIncrementEvent>((event, emit) {
-      state.counter++;
+    on<PatientMainNavigationUpdateIndexEvent>((event, emit) {
+      state.selectedIndex = event.selectedIndex;
       emit(state.copyWith());
     });
   }

@@ -16,8 +16,8 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$PatientMainNavigationState {
-  int get counter => throw _privateConstructorUsedError;
-  set counter(int value) => throw _privateConstructorUsedError;
+  int get selectedIndex => throw _privateConstructorUsedError;
+  set selectedIndex(int value) => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $PatientMainNavigationStateCopyWith<PatientMainNavigationState>
@@ -31,7 +31,7 @@ abstract class $PatientMainNavigationStateCopyWith<$Res> {
       _$PatientMainNavigationStateCopyWithImpl<$Res,
           PatientMainNavigationState>;
   @useResult
-  $Res call({int counter});
+  $Res call({int selectedIndex});
 }
 
 /// @nodoc
@@ -48,12 +48,12 @@ class _$PatientMainNavigationStateCopyWithImpl<$Res,
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? counter = null,
+    Object? selectedIndex = null,
   }) {
     return _then(_value.copyWith(
-      counter: null == counter
-          ? _value.counter
-          : counter // ignore: cast_nullable_to_non_nullable
+      selectedIndex: null == selectedIndex
+          ? _value.selectedIndex
+          : selectedIndex // ignore: cast_nullable_to_non_nullable
               as int,
     ) as $Val);
   }
@@ -68,7 +68,7 @@ abstract class _$$PatientMainNavigationStateImplCopyWith<$Res>
       __$$PatientMainNavigationStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int counter});
+  $Res call({int selectedIndex});
 }
 
 /// @nodoc
@@ -84,12 +84,12 @@ class __$$PatientMainNavigationStateImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? counter = null,
+    Object? selectedIndex = null,
   }) {
     return _then(_$PatientMainNavigationStateImpl(
-      counter: null == counter
-          ? _value.counter
-          : counter // ignore: cast_nullable_to_non_nullable
+      selectedIndex: null == selectedIndex
+          ? _value.selectedIndex
+          : selectedIndex // ignore: cast_nullable_to_non_nullable
               as int,
     ));
   }
@@ -98,15 +98,15 @@ class __$$PatientMainNavigationStateImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$PatientMainNavigationStateImpl implements _PatientMainNavigationState {
-  _$PatientMainNavigationStateImpl({this.counter = 0});
+  _$PatientMainNavigationStateImpl({this.selectedIndex = 0});
 
   @override
   @JsonKey()
-  int counter;
+  int selectedIndex;
 
   @override
   String toString() {
-    return 'PatientMainNavigationState(counter: $counter)';
+    return 'PatientMainNavigationState(selectedIndex: $selectedIndex)';
   }
 
   @JsonKey(ignore: true)
@@ -119,12 +119,12 @@ class _$PatientMainNavigationStateImpl implements _PatientMainNavigationState {
 
 abstract class _PatientMainNavigationState
     implements PatientMainNavigationState {
-  factory _PatientMainNavigationState({int counter}) =
+  factory _PatientMainNavigationState({int selectedIndex}) =
       _$PatientMainNavigationStateImpl;
 
   @override
-  int get counter;
-  set counter(int value);
+  int get selectedIndex;
+  set selectedIndex(int value);
   @override
   @JsonKey(ignore: true)
   _$$PatientMainNavigationStateImplCopyWith<_$PatientMainNavigationStateImpl>

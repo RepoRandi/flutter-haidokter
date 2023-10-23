@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:haidokter/core.dart';
 import '../bloc/patient_main_navigation_bloc.dart';
 import '../event/patient_main_navigation_event.dart';
 import '../state/patient_main_navigation_state.dart';
@@ -50,26 +51,48 @@ class _PatientMainNavigationViewState extends State<PatientMainNavigationView> {
     PatientMainNavigationBloc bloc,
     PatientMainNavigationState state,
   ) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('PatientMainNavigation'),
-      ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Text(
-            'Counter: ${state.counter}',
-            style: const TextStyle(fontSize: 24),
-          ),
-          IconButton(
-            onPressed: () => bloc.add(PatientMainNavigationIncrementEvent()),
-            icon: const Icon(
-              Icons.add,
-              size: 24.0,
+    return DefaultTabController(
+      length: 3,
+      initialIndex: state.selectedIndex,
+      child: Scaffold(
+        body: IndexedStack(
+          index: state.selectedIndex,
+          children: [
+            PatientDashboardView(),
+            Container(
+              color: Colors.green,
             ),
-          ),
-        ],
+            PatientProfileView(),
+          ],
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: state.selectedIndex,
+          onTap: (newIndex) {
+            bloc.add(
+                PatientMainNavigationUpdateIndexEvent(selectedIndex: newIndex));
+          },
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                MdiIcons.doctor,
+              ),
+              label: 'Buat Janji',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                MdiIcons.listBox,
+              ),
+              label: "Order",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+              ),
+              label: "Profile",
+            ),
+          ],
+        ),
       ),
     );
   }
