@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:haidokter/core.dart';
-import '../bloc/patient_doctor_list_bloc.dart';
-import '../event/patient_doctor_list_event.dart';
-import '../state/patient_doctor_list_state.dart';
 
 class PatientDoctorListView extends StatefulWidget {
   const PatientDoctorListView({Key? key}) : super(key: key);

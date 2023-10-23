@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:haidokter/core.dart';
-import '../bloc/login_bloc.dart';
-import '../event/login_event.dart';
-import '../state/login_state.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
