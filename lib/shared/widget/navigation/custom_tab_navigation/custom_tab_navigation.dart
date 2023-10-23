@@ -40,7 +40,7 @@ class _CustomTabNavigationState extends State<CustomTabNavigation> {
                     onTap: () => updateIndex(index),
                     child: Container(
                       height: 50,
-                      width: MediaQuery.of(context).size.width * 0.33,
+                      width: MediaQuery.of(context).size.width * 0.35,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
@@ -67,7 +67,7 @@ class _CustomTabNavigationState extends State<CustomTabNavigation> {
                     onTap: () => updateIndex(index),
                     child: Container(
                       height: 50,
-                      width: MediaQuery.of(context).size.width * 0.33,
+                      width: MediaQuery.of(context).size.width * 0.35,
                       decoration: BoxDecoration(
                         color: disabledColor,
                         borderRadius: BorderRadius.only(
