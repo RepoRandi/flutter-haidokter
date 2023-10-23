@@ -20,7 +20,7 @@ ThemeData getDefaultTheme() {
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       unselectedItemColor: Colors.grey,
-      selectedItemColor: Colors.blueGrey[900]!,
+      selectedItemColor: infoColor,
     ),
     tabBarTheme: TabBarTheme(
       unselectedLabelColor: Colors.grey,
