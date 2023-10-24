@@ -62,6 +62,8 @@ class PatientDoctorListState with _$PatientDoctorListState {
         "doctor_name": "Dr. Cinta Ratu, Sp.A(K)",
         "specialization": "Dokter Anak",
         "hospital": "Rumah Sakit Prima Husada",
+        "hospital_photo":
+            "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9zcGl0YWwlMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
         "address": "Jl. Ceria No. 33, Surabaya",
         "location_in_km": 7.5,
         "patient_count": 220,
