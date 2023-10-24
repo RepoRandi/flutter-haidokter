@@ -39,7 +39,7 @@ class PatientDoctorListState with _$PatientDoctorListState {
         "address": "Jl. Sehat No. 1, Jakarta",
         "location_in_km": 3.2,
         "patient_count": 200,
-        "price": 120.000,
+        "price": 120000,
         "next_schedule": "2023-11-01 09:00 AM"
       },
       {
@@ -53,7 +53,7 @@ class PatientDoctorListState with _$PatientDoctorListState {
         "address": "Jl. Kardiologi No. 21, Yogyakarta",
         "location_in_km": 5.0,
         "patient_count": 170,
-        "price": 150.000,
+        "price": 150000,
         "next_schedule": "2023-11-02 10:30 AM"
       },
       {
@@ -67,7 +67,7 @@ class PatientDoctorListState with _$PatientDoctorListState {
         "address": "Jl. Ceria No. 33, Surabaya",
         "location_in_km": 7.5,
         "patient_count": 220,
-        "price": 175.000,
+        "price": 175000,
         "next_schedule": "2023-11-03 14:00 PM"
       },
       {
@@ -81,7 +81,7 @@ class PatientDoctorListState with _$PatientDoctorListState {
         "address": "Jl. Telinga No. 44, Bandung",
         "location_in_km": 2.8,
         "patient_count": 150,
-        "price": 100.000,
+        "price": 100000,
         "next_schedule": "2023-11-04 11:00 AM"
       },
       {
@@ -95,7 +95,7 @@ class PatientDoctorListState with _$PatientDoctorListState {
         "address": "Jl. Pandang No. 56, Medan",
         "location_in_km": 6.0,
         "patient_count": 180,
-        "price": 125.000,
+        "price": 125000,
         "next_schedule": "2023-11-05 15:00 PM"
       }
     ])
