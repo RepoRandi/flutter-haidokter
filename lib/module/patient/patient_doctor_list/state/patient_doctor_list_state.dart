@@ -67,6 +67,7 @@ class PatientDoctorListState with _$PatientDoctorListState {
         "address": "Jl. Ceria No. 33, Surabaya",
         "location_in_km": 7.5,
         "patient_count": 220,
+        "price": 175.000,
         "next_schedule": "2023-11-03 14:00 PM"
       },
       {
