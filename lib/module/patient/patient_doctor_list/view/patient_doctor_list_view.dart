@@ -260,7 +260,7 @@ class _PatientDoctorListViewState extends State<PatientDoctorListView> {
                                 height: 5.0,
                               ),
                               Text(
-                                'Rp. 100.000',
+                                'Rp. ${doctor['price']}',
                                 style:
                                     TextStyle(fontSize: 16, color: orangeColor),
                               ),
