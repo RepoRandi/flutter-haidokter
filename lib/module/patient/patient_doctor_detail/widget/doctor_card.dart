@@ -41,7 +41,7 @@ class DoctorCard extends StatelessWidget {
                 backgroundImage: NetworkImage(photoUrl),
               ),
               const SizedBox(
-                width: 12.0,
+                width: 9.0,
               ),
               Expanded(
                 child: Column(
