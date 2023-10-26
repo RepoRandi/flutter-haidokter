@@ -151,8 +151,8 @@ class _PatientDoctorDetailViewState extends State<PatientDoctorDetailView> {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 90,
-        padding: EdgeInsets.all(20),
+        height: 80,
+        padding: EdgeInsets.all(18),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: orangeColor,
