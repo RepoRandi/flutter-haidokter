@@ -91,125 +91,122 @@ class _PatientDashboardViewState extends State<PatientDashboardView> {
       ),
       body: SingleChildScrollView(
         controller: ScrollController(),
-        child: Container(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Container(
-                height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width,
-                child: Stack(
-                  children: [
-                    Container(
-                      height: 250,
-                      width: MediaQuery.of(context).size.width,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
-                          colors: [
-                            blueColor,
-                            lightColor,
-                          ],
-                        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+              child: Stack(
+                children: [
+                  Container(
+                    height: 250,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                        colors: [
+                          blueColor,
+                          lightColor,
+                        ],
                       ),
                     ),
-                    Positioned(
-                      top: 130,
-                      left: 20,
-                      right: 20,
-                      child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(12.0),
+                  ),
+                  Positioned(
+                    top: 130,
+                    left: 16,
+                    right: 16,
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(12.0),
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color(0x19000000),
+                            blurRadius: 24,
+                            offset: Offset(0, 11),
                           ),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Color(0x19000000),
-                              blurRadius: 24,
-                              offset: Offset(0, 11),
-                            ),
-                          ],
-                        ),
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 16, top: 16, right: 16),
-                              child: Row(
-                                children: [
-                                  CircleAvatar(
-                                    backgroundColor: pinkColor,
-                                    child: Icon(
-                                      MdiIcons.calendar,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    width: 12.0,
-                                  ),
-                                  Expanded(
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Buat Janji Konsultasi',
-                                          overflow: TextOverflow.ellipsis,
-                                          style: TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                        const SizedBox(
-                                          height: 5.0,
-                                        ),
-                                        Text(
-                                          'Proses singkat, Bayar Cepat dan tanpa antri',
-                                          style: TextStyle(fontSize: 12),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 12.0,
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 16),
-                              child: PatientDashboardSearch(),
-                            ),
-                            const SizedBox(
-                              height: 12.0,
-                            ),
-                            Container(
-                                height: MediaQuery.of(context).size.height,
-                                child: CustomTabNavigation(
-                                  headers: [
-                                    'Dokter',
-                                    'Lab Test',
-                                    'Medical Treatment'
-                                  ],
-                                  children: [
-                                    PatientDoctorListView(),
-                                    PatientLabTestListView(),
-                                    PatientMedicalTreatmentListView()
-                                  ],
-                                )),
-                          ],
-                        ),
+                        ],
                       ),
-                    )
-                  ],
-                ),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                left: 16, top: 16, right: 16),
+                            child: Row(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: pinkColor,
+                                  child: Icon(
+                                    MdiIcons.calendar,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 12.0,
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Buat Janji Konsultasi',
+                                        overflow: TextOverflow.ellipsis,
+                                        style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      const SizedBox(
+                                        height: 5.0,
+                                      ),
+                                      Text(
+                                        'Proses singkat, Bayar Cepat dan tanpa antri',
+                                        style: TextStyle(fontSize: 12),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 12.0,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: PatientDashboardSearch(),
+                          ),
+                          const SizedBox(
+                            height: 12.0,
+                          ),
+                          Container(
+                              height: MediaQuery.of(context).size.height,
+                              child: CustomTabNavigation(
+                                headers: [
+                                  'Dokter',
+                                  'Lab Test',
+                                  'Medical Treatment'
+                                ],
+                                children: [
+                                  PatientDoctorListView(),
+                                  PatientLabTestListView(),
+                                  PatientMedicalTreatmentListView()
+                                ],
+                              )),
+                        ],
+                      ),
+                    ),
+                  )
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
