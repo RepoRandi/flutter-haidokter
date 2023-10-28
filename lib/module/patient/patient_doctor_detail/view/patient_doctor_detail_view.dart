@@ -99,7 +99,9 @@ class _PatientDoctorDetailViewState extends State<PatientDoctorDetailView> {
                   'Selasa, 2 Oktober 2023',
                   'Rabu, 3 Oktober 2023'
                 ],
-                onScheduleTapped: () {},
+                onScheduleTapped: () {
+                  Get.to(PatientOrderView());
+                },
                 onSeeAllTapped: () {},
               ),
             ),
