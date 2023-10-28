@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:haidokter/shared/widget/navigation/step_navigation/step_navigation.dart';
 import '../bloc/patient_order_bloc.dart';
 import '../event/patient_order_event.dart';
 import '../state/patient_order_state.dart';
@@ -48,23 +49,25 @@ class _PatientOrderViewState extends State<PatientOrderView> {
     PatientOrderState state,
   ) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('PatientOrder'),
-      ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Text(
-            'Counter: ${state.counter}',
-            style: const TextStyle(fontSize: 24),
+      body: StepNavigation(
+        navigations: [
+          "Pilih Dokter",
+          "Data Pemesanan",
+          "Isi Data Pasien",
+          "Pembayaran"
+        ],
+        pages: [
+          Container(
+            decoration: BoxDecoration(color: Colors.amber),
           ),
-          IconButton(
-            onPressed: () => bloc.add(PatientOrderIncrementEvent()),
-            icon: const Icon(
-              Icons.add,
-              size: 24.0,
-            ),
+          Container(
+            decoration: BoxDecoration(color: Colors.yellow),
+          ),
+          Container(
+            decoration: BoxDecoration(color: Colors.green),
+          ),
+          Container(
+            decoration: BoxDecoration(color: Colors.blue),
           ),
         ],
       ),
