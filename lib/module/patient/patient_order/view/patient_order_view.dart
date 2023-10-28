@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:haidokter/core.dart';
 import 'package:haidokter/shared/widget/navigation/step_navigation/step_navigation.dart';
 import '../bloc/patient_order_bloc.dart';
 import '../event/patient_order_event.dart';
@@ -50,6 +51,7 @@ class _PatientOrderViewState extends State<PatientOrderView> {
   ) {
     return Scaffold(
       body: StepNavigation(
+        initialIndex: 1,
         navigations: [
           "Pilih Dokter",
           "Data Pemesanan",
@@ -60,15 +62,9 @@ class _PatientOrderViewState extends State<PatientOrderView> {
           Container(
             decoration: BoxDecoration(color: Colors.amber),
           ),
-          Container(
-            decoration: BoxDecoration(color: Colors.yellow),
-          ),
-          Container(
-            decoration: BoxDecoration(color: Colors.green),
-          ),
-          Container(
-            decoration: BoxDecoration(color: Colors.blue),
-          ),
+          PatientOrderDetailView(),
+          PatientOrderPatientDataView(),
+          PatientOrderPaymentView(),
         ],
       ),
     );

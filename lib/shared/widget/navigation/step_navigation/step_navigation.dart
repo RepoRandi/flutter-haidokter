@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:haidokter/core.dart';
 
 class StepNavigation extends StatefulWidget {
+  final int initialIndex;
   final List<String> navigations;
   final List<Widget> pages;
 
-  const StepNavigation(
-      {Key? key, required this.navigations, required this.pages})
-      : super(key: key);
+  const StepNavigation({
+    Key? key,
+    this.initialIndex = 0,
+    required this.navigations,
+    required this.pages,
+  }) : super(key: key);
 
   @override
   State<StepNavigation> createState() => _StepNavigationState();
@@ -23,6 +27,12 @@ class _StepNavigationState extends State<StepNavigation> {
 
   double get progress {
     return (selectedIndex + 1) / widget.navigations.length;
+  }
+
+  @override
+  void initState() {
+    selectedIndex = widget.initialIndex;
+    super.initState();
   }
 
   @override
