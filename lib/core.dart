@@ -1,5 +1,5 @@
 /*
-We believe, the class name must be unique. 
+We believe, the class name must be unique.
 If there is a conflicting class name in this file,
 it means you have to rename it to something more unique.
 */
@@ -111,5 +111,3 @@ export 'package:haidokter/shared/widget/navigation/custom_tab_navigation/custom_
 export 'package:haidokter/shared/widget/typography/heading.dart';
 export 'package:haidokter/shared/widget/widget_demo/widget_demo.dart';
 export 'package:haidokter/state_util.dart';
-export 'core_package.dart';
-export 'setup.dart';
