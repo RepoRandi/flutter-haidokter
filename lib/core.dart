@@ -1,5 +1,5 @@
 /*
-We believe, the class name must be unique.
+We believe, the class name must be unique. 
 If there is a conflicting class name in this file,
 it means you have to rename it to something more unique.
 */
@@ -31,6 +31,12 @@ export 'package:haidokter/module/patient/patient_doctor_detail/bloc/patient_doct
 export 'package:haidokter/module/patient/patient_doctor_detail/event/patient_doctor_detail_event.dart';
 export 'package:haidokter/module/patient/patient_doctor_detail/state/patient_doctor_detail_state.dart';
 export 'package:haidokter/module/patient/patient_doctor_detail/view/patient_doctor_detail_view.dart';
+export 'package:haidokter/module/patient/patient_doctor_detail/widget/doctor_card.dart';
+export 'package:haidokter/module/patient/patient_doctor_detail/widget/doctor_schedule_card.dart';
+export 'package:haidokter/module/patient/patient_doctor_detail/widget/expandable_doctor_card.dart';
+export 'package:haidokter/module/patient/patient_doctor_detail/widget/expandable_educational_background.dart';
+export 'package:haidokter/module/patient/patient_doctor_detail/widget/expandable_medical_treatment_card.dart';
+export 'package:haidokter/module/patient/patient_doctor_detail/widget/expandable_pratical_experience_card.dart';
 export 'package:haidokter/module/patient/patient_doctor_list/bloc/patient_doctor_list_bloc.dart';
 export 'package:haidokter/module/patient/patient_doctor_list/event/patient_doctor_list_event.dart';
 export 'package:haidokter/module/patient/patient_doctor_list/state/patient_doctor_list_state.dart';
@@ -47,6 +53,10 @@ export 'package:haidokter/module/patient/patient_medical_treatment_list/bloc/pat
 export 'package:haidokter/module/patient/patient_medical_treatment_list/event/patient_medical_treatment_list_event.dart';
 export 'package:haidokter/module/patient/patient_medical_treatment_list/state/patient_medical_treatment_list_state.dart';
 export 'package:haidokter/module/patient/patient_medical_treatment_list/view/patient_medical_treatment_list_view.dart';
+export 'package:haidokter/module/patient/patient_order/bloc/patient_order_bloc.dart';
+export 'package:haidokter/module/patient/patient_order/event/patient_order_event.dart';
+export 'package:haidokter/module/patient/patient_order/state/patient_order_state.dart';
+export 'package:haidokter/module/patient/patient_order/view/patient_order_view.dart';
 export 'package:haidokter/module/patient/patient_profile/bloc/patient_profile_bloc.dart';
 export 'package:haidokter/module/patient/patient_profile/event/patient_profile_event.dart';
 export 'package:haidokter/module/patient/patient_profile/state/patient_profile_state.dart';
@@ -101,3 +111,5 @@ export 'package:haidokter/shared/widget/navigation/custom_tab_navigation/custom_
 export 'package:haidokter/shared/widget/typography/heading.dart';
 export 'package:haidokter/shared/widget/widget_demo/widget_demo.dart';
 export 'package:haidokter/state_util.dart';
+export 'core_package.dart';
+export 'setup.dart';
