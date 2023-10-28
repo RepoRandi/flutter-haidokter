@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:haidokter/core.dart';
-import 'package:haidokter/shared/widget/navigation/step_navigation/step_navigation.dart';
-import '../bloc/patient_order_bloc.dart';
-import '../event/patient_order_event.dart';
-import '../state/patient_order_state.dart';
 
 class PatientOrderView extends StatefulWidget {
   const PatientOrderView({Key? key}) : super(key: key);
