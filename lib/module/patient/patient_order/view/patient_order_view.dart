@@ -56,7 +56,7 @@ class _PatientOrderViewState extends State<PatientOrderView> {
         ],
         pages: [
           Container(
-            decoration: BoxDecoration(color: Colors.amber),
+            decoration: BoxDecoration(color: Colors.white),
           ),
           PatientOrderDetailView(),
           PatientOrderPatientDataView(),

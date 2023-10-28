@@ -48,9 +48,6 @@ class _PatientOrderDetailViewState extends State<PatientOrderDetailView> {
     PatientOrderDetailState state,
   ) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('PatientOrderDetail'),
-      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
