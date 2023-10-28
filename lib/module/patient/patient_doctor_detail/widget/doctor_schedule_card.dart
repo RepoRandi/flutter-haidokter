@@ -9,8 +9,8 @@ class DoctorScheduleCard extends StatelessWidget {
   final String distanceInKm;
   final String consultationFee;
   final List<String> schedules;
-  final VoidCallback onSeeAllTapped;
   final VoidCallback onScheduleTapped;
+  final VoidCallback onSeeAllTapped;
 
   const DoctorScheduleCard({
     Key? key,
@@ -21,8 +21,8 @@ class DoctorScheduleCard extends StatelessWidget {
     required this.distanceInKm,
     required this.consultationFee,
     required this.schedules,
-    required this.onSeeAllTapped,
     required this.onScheduleTapped,
+    required this.onSeeAllTapped,
   }) : super(key: key);
 
   @override
