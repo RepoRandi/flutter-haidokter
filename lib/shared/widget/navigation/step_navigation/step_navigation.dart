@@ -64,9 +64,9 @@ class _StepNavigationState extends State<StepNavigation> {
                       (index) {
                         var navigationName = widget.navigations[index];
                         bool selected = selectedIndex == index;
-                        bool nextSelected = selectedIndex + 1 == index ||
-                            selectedIndex + 2 == index ||
-                            selectedIndex + 3 == index;
+                        bool nextSelected = index > selectedIndex &&
+                            index <= navigationName.length;
+
                         bool isLastIndex =
                             index == widget.navigations.length - 1;
                         return Row(
